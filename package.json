@@ -1,5 +1,5 @@
 {
-  "name": "react-native-media-picker",
+  "name": "@ramprasadm1986/react-native-media-picker",
   "version": "1.0.0",
   "description": "Easy to use media picker modal for React Native by Ramprasad",
   "main": "./build/dist/MediaPicker.js",
