@@ -1,0 +1,53 @@
+{
+  "name": "@ramptasadm1986/react-native-media-picker",
+  "version": "1.0.0",
+  "description": "Easy to use media picker modal for React Native by Ramprasad",
+  "main": "./build/dist/MediaPicker.js",
+  "repository": "git@github.com:ramprasadm1986/react-native-media-picker.git",
+  "author": "Ramprasad Moharana <ramprasad@krititech.in>",
+  "license": "Apache License 2.0",
+
+  "bugs": "https://github.com/ramprasadm1986/react-native-media-picker/issues",
+  "keywords": [
+    "react native mediapicker",
+    "react native",
+    "media picker"
+    
+  ],
+  "scripts": {
+    "build": "cd lib && tsc",
+    "postbuild":"@powershell copy './package.json' './build/dist' && Echo Build completed!",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {
+    "@freakycoder/react-native-helpers": "^0.1.2",
+    "react": "16.9.0",
+    "react-native": "^0.61.5",
+    "react-native-dynamic-vector-icons": "^0.2.1",
+    "react-native-gesture-handler": "^1.5.3",
+    "react-native-image-crop-picker": "^0.26.2",
+    "react-native-modalize": "^1.3.6",
+    "react-native-reanimated": "^1.4.0",
+    "react-native-vector-icons": "^6.6.0"
+  },
+  "peerDependencies": {
+    "react": ">= 16.x.x",
+    "react-native": ">= 0.55.x",
+    "@freakycoder/react-native-helpers": ">= 0.1.2",
+    "react-native-dynamic-vector-icons": ">= 0.2.1",
+    "react-native-gesture-handler": ">= 1.5.3",
+    "react-native-image-crop-picker": ">= 0.26.2",
+    "react-native-modalize": ">= 1.3.6",
+    "react-native-reanimated": ">= 1.4.0",
+    "react-native-vector-icons": ">= 6.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.17",
+    "@types/react-native": "^0.60.28",
+    "react-native-typescript-transformer": "^1.2.13",
+    "typescript": "^3.7.4"
+  }
+}
